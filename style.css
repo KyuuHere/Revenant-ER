@@ -1,68 +1,100 @@
 roblox{
-    font-size: 300%;
-    font-family: fantasy;
-    color: #c77dff;
-    margin-bottom: 10px;
+  font-size: 300%;
+  font-family: fantasy;
+  color: #c77dff;
+  margin-bottom: 10px;
 }
 body{
-    background-color: black;
-    color: aliceblue;
+  background-color: black;
+  color: aliceblue;
 }
 
 h1, h2 {
-  color: #c77dff;          /* fialová barva pro nadpisy */
-  margin-bottom: 10px;       
+color: #c77dff;          /* fialová barva pro nadpisy */
+margin-bottom: 10px;       
 }
 
+
 body {
-  font-family: Arial, sans-serif;
-  background: #0b0b0f;   /* tmavé pozadí */
-  color: #e6eef8;        /* světle šedý text */
-  line-height: 1.5;      /* příjemná výška řádku */
-  padding: 20px;
+font-family: Arial, sans-serif;
+background: #0b0b0f;   /* tmavé pozadí */
+color: #e6eef8;        /* světle šedý text */
+line-height: 1.5;      /* příjemná výška řádku */
+padding: 20px;
 }
 
 nav a{
-  background: #222;       /* tmavé pozadí */
-  color: #c77dff;         /* fialový text */
-  font-weight: bold;
-  padding: 10px 14px;
-  border-radius: 8px;
+background: #222;       /* tmavé pozadí */
+color: #c77dff;         /* fialový text */
+font-weight: bold;
+padding: 10px 14px;
+border-radius: 8px;
 }
 nav a:hover {
-  color: #c77dff;       /* při přejetí myší zfialoví */
+color: #c77dff;       /* při přejetí myší zfialoví */
 }
 
-.revenant-logo{
-      position: absolute;  /* posouvat prvek podle rohu sekce */
-  top: 10px;           /* vzdálenost od horního okraje sekce */
-  right: 10px;         /* vzdálenost od pravého okraje sekce */
-  width: 800px;         /* velikost loga */
-  height: auto;        /* zachová poměr stran */
+.revenant-logo {
+  position: fixed; /* Fixní pozice, aby logo bylo viditelné na všech stránkách */
+  top: 10px;       /* Odsazení od vrchu */
+  left: 50%;       /* Umístění na střed stránky horizontálně */
+  transform: translateX(-50%); /* Pomocí translateX zaručíme, že bude přesně ve středu */
+  width: 250px;    /* Zvětšení loga */
+  height: auto;    /* Zachování poměru stran */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Jemný stín pro 3D efekt */
+  border-radius: 10px; /* Zaoblené rohy pro moderní vzhled */
+  transition: transform 0.3s ease; /* Efekt na hover */
+  position: right;
 }
+
+.revenant-logo:hover {
+  transform: translateX(-50%) scale(1.1); /* Zvýšení velikosti při najetí myší */
+}
+
+
 
 .passivka{
-      position: absolute;  /* posouvat prvek podle rohu sekce */
+    position: absolute;  /* posouvat prvek podle rohu sekce */
 
 }
 .necromancy{
-    margin-left: 70px;
-    margin-top: 30px;
-    
+  margin-left: 70px;
+  margin-top: 30px;
+  
 }
 .abilitka{
-    margin-top: 30px;
+  margin-top: 30px;
 }
 .skillpostavya{
-  position: relative;
-  top: -50px;   /* - OPRAVUD POSUNE NAHORU */
-  right: -70px;
+position: relative;
+top: -50px;   /* - OPRAVUD POSUNE NAHORU */
+right: -70px;
 }
 .Ultimate{
-    position:absolute;
-    margin-top: -20px;
-    margin-left: 1px;
+  position:absolute;
+  margin-top: -20px;
+  margin-left: 1px;
 }
 .FUNGUJ{
-    margin-left: 70px;
+  margin-left: 70px;
+}
+.zbrane-list li,
+.schopnosti-list li {
+background: #16161d;
+padding: 10px 15px;
+margin-bottom: 10px;
+border-left: 3px solid #7b2cbf;
+border-radius: 6px;
+margin:auto 1;
+}
+
+.revenantclaws {
+  width: 100px;  /* Nastav šířku obrázku dle potřeby */
+  height: auto;  /* Zachová poměr stran */
+  margin-top: 10px; /* Pro oddělení od textu */
+  border-radius: 6px; /* Zaoblení rohů pro lepší vzhled */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Jemný stín */
+
+margin-left: 0.001%;
+margin-bottom: 0.01%;
 }
