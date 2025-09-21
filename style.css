@@ -19,7 +19,7 @@ body {
 font-family: Arial, sans-serif;
 background: #0b0b0f;   /* tmavé pozadí */
 color: #e6eef8;        /* světle šedý text */
-line-height: 1.5;      /* příjemná výška řádku */
+line-height: 1.5;      /* výška řádku */
 padding: 20px;
 }
 
@@ -34,21 +34,22 @@ nav a:hover {
 color: #c77dff;       /* při přejetí myší zfialoví */
 }
 
-.revenant-logo {
-  position: fixed; /* Fixní pozice, aby logo bylo viditelné na všech stránkách */
-  top: 10px;       /* Odsazení od vrchu */
-  left: 50%;       /* Umístění na střed stránky horizontálně */
-  transform: translateX(-50%); /* Pomocí translateX zaručíme, že bude přesně ve středu */
-  width: 250px;    /* Zvětšení loga */
-  height: auto;    /* Zachování poměru stran */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Jemný stín pro 3D efekt */
-  border-radius: 10px; /* Zaoblené rohy pro moderní vzhled */
-  transition: transform 0.3s ease; /* Efekt na hover */
-  position: right;
+.er-logo {
+  position: fixed;          
+  bottom: 20px;             
+  right: 20px;             
+  width: 180px;            
+  height: auto;             
+  opacity: 0.85;            
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5); /* jemný stín */
+  border-radius: 12px;      
+  transition: all 0.3s ease;
+  z-index: 999;             
 }
 
-.revenant-logo:hover {
-  transform: translateX(-50%) scale(1.1); /* Zvýšení velikosti při najetí myší */
+.er-logo:hover {
+  opacity: 1;               /* při hoveru bude plně viditelné */
+  transform: scale(1.05);   /* mírné zvětšení při přejetí myší */
 }
 
 
@@ -87,6 +88,22 @@ border-left: 3px solid #7b2cbf;
 border-radius: 6px;
 margin:auto 1;
 }
+
+.revenant-logo {
+  position: absolute;   /* fixně v rohu headeru */
+  top: 10px;
+  right: 10px;
+  width: 250px;         /* velké logo */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+  z-index: 10;          /* aby bylo nad textem */
+}
+.revenant-logo:hover {
+  opacity: 1;               /* při hoveru bude plně viditelné */
+  transform: scale(1.05);   /* mírné zvětšení při přejetí myší */
+}
+
 
 .revenantclaws {
   width: 100px;  /* Nastav šířku obrázku dle potřeby */
